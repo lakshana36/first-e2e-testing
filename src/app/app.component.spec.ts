@@ -24,6 +24,14 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
   }));
+  it('should be truthy', () =>{
+    let app=new AppComponent();
+    expect(app).toBeTruthy();
+  });
+  it('should calculate',() =>{
+    let app=new AppComponent();
+    expect(app.total).toBe(3);
+  })
   it('should calculate the total',() => {
     let app=new AppComponent();
     app.items=[
