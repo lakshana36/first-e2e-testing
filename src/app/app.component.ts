@@ -17,7 +17,7 @@ export class AppComponent {
       this.calculate();
   }
   calculate(){
-      this.total=this.items.reduce({sum,item} => sum+item.price,0);
+      this.total=this.items.reduce((sum,item) => sum+this.items["price"],0);
   };
 }
 

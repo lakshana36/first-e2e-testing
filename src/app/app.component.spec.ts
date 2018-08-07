@@ -39,6 +39,6 @@ describe('AppComponent', () => {
       {name:'item2',price:4}
     ];
     app.calculate();
-    expect(app.total).toEqual(4);
+    expect(app.total).toEqual(5);
   });
 });
