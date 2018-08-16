@@ -11,7 +11,7 @@ describe('test1 App', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
-  it('should have a title of Cart Items', () =>{
+  it('should have a title of app', () =>{
      browser.get('/');
      let title =element(by.tagName('h1')).getText();
      expect(title).toEqual('app');
